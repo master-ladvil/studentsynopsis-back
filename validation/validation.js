@@ -56,4 +56,4 @@ return schema.validate(data)
 }
 
 module.exports = registerValidation
-module.exports.loginValidation
+module.exports = loginValidation
