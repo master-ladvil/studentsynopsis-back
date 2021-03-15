@@ -26,8 +26,8 @@ app.get('/',(req,res) => {
 
 
 
-//const  url  =  "mongodb://localhost:27017/sallo-synapse"
-const  connect  =  mongoose.connect(process.env.url, { useNewUrlParser: true , useUnifiedTopology: true })
+const  url  =  "mongodb://localhost:27017/sallo-synapse"
+const  connect  =  mongoose.connect(url, { useNewUrlParser: true , useUnifiedTopology: true })
 connect.then(db  =>  {
     console.log("connected correctly to the server")})
 
