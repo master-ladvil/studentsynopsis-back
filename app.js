@@ -10,10 +10,13 @@ app.use(bodyparser.urlencoded())
 
 const signupRoute = require("./routes/signup")
 const loginRoute = require("./routes/login")
+const verifyroute = require("./routes/token_check")
 
 
 app.use('/signup',signupRoute)
 app.use('/login',loginRoute)
+app.use('/token', verifyroute)
+
 
 app.get('/',(req,res) => {
     res.send("working biatch")
