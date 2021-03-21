@@ -17,10 +17,10 @@ router.get('/',(req,res) => {
 
 router.post('/', async (req,res) => {
 //validation
-    const {error} = registerValidation(req.body)
+    /* const {error} = registerValidation(req.body)
     if(error){
     return res.status(400).send(error.details[0].message)
-    }
+    } */
 //checking for alreday registered
 
    /*  const regNoExist = await signupmod.findOne({regNo : req.body.regNo})
